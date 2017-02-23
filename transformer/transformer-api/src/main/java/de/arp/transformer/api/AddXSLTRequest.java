@@ -12,6 +12,19 @@ public class AddXSLTRequest {
 	private String url;
 
 	/**
+	 * 
+	 */
+	public AddXSLTRequest() {
+	}
+
+	/**
+	 * @param url
+	 */
+	public AddXSLTRequest(String url) {
+		this.url = url;
+	}
+
+	/**
 	 * @return the url
 	 */
 	public String getUrl() {

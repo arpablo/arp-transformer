@@ -25,6 +25,13 @@ public interface TransformerService {
 	public List<String> getXMLFilters();
 	
 	/**
+	 * Return information about the given XML Filter
+	 * @param name	the name of the filter
+	 * @return an XMLFilterInfo
+	 */
+	public XMLFilterInfo getXMLFilter(String name);
+	
+	/**
 	 * Add a new XSLT stylesheet to the configured XSLT filters
 	 * @param name		the name of the stylesheet
 	 * @param request	the AddXSLTRequest instance 
