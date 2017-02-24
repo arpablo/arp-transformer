@@ -1,0 +1,36 @@
+info:
+  app:
+    name: Transformer-microservice
+    description: This is microservice Transformer
+    version: v1
+
+# HTTP-Server settings
+server:
+  port: 8080
+    
+spring:
+  application:
+    name: Transformer-microservice
+  jackson:
+    serialization:
+      indent-output: true    
+  thymeleaf:
+    mode: HTML
+      
+logging:
+  level:
+    org.springframework: warn 
+    de.arp.transformer:  debug
+    
+# For management endpoints  
+management:
+  security:
+    enabled: false
+endpoints:
+  health:
+    sensitive: false
+
+# Flyway database migration
+flyway:
+  enabled: false
+  locations: classpath:db/flyway
